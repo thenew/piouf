@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <title>piouf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    /* reset */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .o {
+      animation: o 1s ease-out;
+    }
+    @keyframes o {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:
+        url(data:image/png;base64,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)
+          0% 0% / 6px 6px repeat,
+        radial-gradient(
+          130% 86% at 46% 46%,
+          color(srgb 0.8 0.8 0.8) 0%,
+          #f1f1f1 100%
+        );
+      background-blend-mode: color-dodge;
+    "
+  >
+    <svg
+      class="o"
+      width="150"
+      height="150"
+      viewBox="0 0 150 150"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="75" cy="75" r="75" fill="#480CE8" />
+    </svg>
+  </body>
+</html>
